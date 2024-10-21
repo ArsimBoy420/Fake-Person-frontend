@@ -9,6 +9,7 @@ import {
     AlertIcon,
     Flex,
 } from "@chakra-ui/react";
+import axios from 'axios';
 
 type FullPersonDTO = {
     id: number;
@@ -47,11 +48,11 @@ const App: React.FC = () => {
 
     const fetchBulkPersons = async () => {
         try {
-            const response = await fetch("/api/persons/bulk?count=10");
-            if (!response.ok) {
+            const response = await axios.get("/api/persons/bulk?count=10");
+            if (response.status !== 200) {
                 throw new Error("Failed to fetch persons");
             }
-            const data: FullPersonDTO[] = await response.json();
+            const data: FullPersonDTO[] = response.data;
             setPersons(data);
             setError(null);
         } catch (err: unknown) {
