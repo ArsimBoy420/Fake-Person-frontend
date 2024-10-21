@@ -1,0 +1,50 @@
+/* App.css */
+body {
+  background-color: #000; /* Sort baggrund */
+  color: #000000; /* Hvid tekst for at gøre det læsbart mod den sorte baggrund */
+  margin: 0; /* Fjern standard margin */
+  font-family: Arial, sans-serif; /* Standard skrifttype */
+}
+
+.container {
+  text-align: left; /* Skubber indholdet til venstre */
+  margin: 20px;
+}
+
+.heading {
+  font-size: 2.5rem; /* Gør overskriften større */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.get-button {
+  background-color: #1d5b3a; /* Grøn farve */
+  color: white; /* Hvid tekst */
+  padding: 10px 20px; /* Indre margin */
+  border: none; /* Ingen kant */
+  border-radius: 5px; /* Runde kanter */
+  cursor: pointer; /* Skifter musemarkøren til en hånd */
+  font-size: 1.2rem; /* Større tekst på knappen */
+  margin-bottom: 20px; /* Afstand under knappen */
+  transition: background-color 0.3s; /* Tilføj overgangseffekt */
+}
+
+.get-button:hover {
+  background-color: #2f855a; /* Mørkere grøn, når musen svæver */
+}
+
+.output-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #353941; /* Mørkere baggrundsfarve for output-kassen */
+  color: #fff; /* Hvid tekst i output-kassen */
+  max-width: 500px;
+  margin-left: 0; /* Ingen margin til venstre for at skubbe til venstre */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

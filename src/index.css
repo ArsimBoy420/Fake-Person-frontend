@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000; /* Ændret til sort baggrund */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start; /* Juster til venstre */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000; /* Sort baggrund */
+  color: #fff; /* Hvid tekst for læsbarhed */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Juster indholdet i root til venstre */
+  padding: 500px; /* Tilføj lidt padding hvis nødvendigt */
+}
+
+/* Yderligere stilarter for knapper og tekst */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* index.css */
+
+/* Tilføj dette for at ændre baggrunden og teksten for li-elementerne */
+li {
+  background-color: #333; /* Mørkegrå baggrund for li-elementer */
+  color: #fff; /* Hvid tekst for læsbarhed */
+  padding: 10px; /* Indvendig afstand */
+  border-radius: 5px; /* Rundede hjørner */
+  margin-bottom: 10px; /* Afstand mellem li-elementer */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #000000;
+  }
+}
